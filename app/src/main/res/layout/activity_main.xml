@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_text_in"
+        android:layout_above="@+id/iko"
+        android:layout_marginBottom="6dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:gravity="right"
+        android:padding="4dp"
+        android:weightSum="120"
+        android:orientation="horizontal"
+        android:id="@+id/iko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+        <Button
+            android:id="@+id/reciv"
+            app:backgroundTint="@null"
+            android:textSize="9sp"
+            android:layout_weight="14"
+            android:text="RECIEVE"
+            android:background="#ED430D"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"></Button>
+        <EditText
+
+
+            android:id="@+id/edittxt"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"></EditText>
+
+        <Button
+            android:id="@+id/send"
+            android:textSize="9sp"
+            android:background="#4CAF50"
+            app:backgroundTint="@null"
+
+            android:text="SEND"
+            android:layout_width="0dp"
+            android:layout_weight="34"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+</RelativeLayout>
